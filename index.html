@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <title>Piano</title>
+</head>
+
+<body>
+  <div class="menu">
+    <label for="quizSelect">Quiz :</label>
+    <select id="quizSelect">
+      <option value="maj_triads">Triades majeures</option>
+      <option value="min_triads">Triades mineures</option>
+    </select>
+    <button id="startQuizButton">Commencer le quizz</button>
+  </div>
+
+  <div class="question">
+    <!-- Contenu de la question et de l'audio -->
+  </div>
+
+
+
+  <div class="piano">
+    <div data-note="C1" class="key white"></div>
+    <div data-note="Db1" class="key black"></div>
+    <div data-note="D1" class="key white"></div>
+    <div data-note="Eb1" class="key black"></div>
+    <div data-note="E1" class="key white"></div>
+    <div data-note="F1" class="key white"></div>
+    <div data-note="Gb1" class="key black"></div>
+    <div data-note="G1" class="key white"></div>
+    <div data-note="Ab1" class="key black"></div>
+    <div data-note="A1" class="key white"></div>
+    <div data-note="Bb1" class="key black"></div>
+    <div data-note="B1" class="key white"></div>
+    
+    <div data-note="C2" class="key white"></div>
+    <div data-note="Db2" class="key black"></div>
+    <div data-note="D2" class="key white"></div>
+    <div data-note="Eb2" class="key black"></div>
+    <div data-note="E2" class="key white"></div>
+    <div data-note="F2" class="key white"></div>
+    <div data-note="Gb2" class="key black"></div>
+    <div data-note="G2" class="key white"></div>
+    <div data-note="Ab2" class="key black"></div>
+    <div data-note="A2" class="key white"></div>
+    <div data-note="Bb2" class="key black"></div>
+    <div data-note="B2" class="key white"></div>
+
+    <div data-note="C3" class="key white"></div>
+    <div data-note="Db3" class="key black"></div>
+    <div data-note="D3" class="key white"></div>
+    <div data-note="Eb3" class="key black"></div>
+    <div data-note="E3" class="key white"></div>
+    <div data-note="F3" class="key white"></div>
+    <div data-note="Gb3" class="key black"></div>
+    <div data-note="G3" class="key white"></div>
+    <div data-note="Ab3" class="key black"></div>
+    <div data-note="A3" class="key white"></div>
+    <div data-note="Bb3" class="key black"></div>
+    <div data-note="B3" class="key white"></div>
+
+    <div data-note="C4" class="key white"></div>
+    <div data-note="Db4" class="key black"></div>
+    <div data-note="D4" class="key white"></div>
+    <div data-note="Eb4" class="key black"></div>
+    <div data-note="E4" class="key white"></div>
+    <div data-note="F4" class="key white"></div>
+    <div data-note="Gb4" class="key black"></div>
+    <div data-note="G4" class="key white"></div>
+    <div data-note="Ab4" class="key black"></div>
+    <div data-note="A4" class="key white"></div>
+    <div data-note="Bb4" class="key black"></div>
+    <div data-note="B4" class="key white"></div>
+
+    <div data-note="C5" class="key white"></div>
+    <div data-note="Db5" class="key black"></div>
+    <div data-note="D5" class="key white"></div>
+    <div data-note="Eb5" class="key black"></div>
+    <div data-note="E5" class="key white"></div>
+    <div data-note="F5" class="key white"></div>
+    <div data-note="Gb5" class="key black"></div>
+    <div data-note="G5" class="key white"></div>
+    <div data-note="Ab5" class="key black"></div>
+    <div data-note="A5" class="key white"></div>
+    <div data-note="Bb5" class="key black"></div>
+    <div data-note="B5" class="key white"></div>
+
+    <div data-note="C6" class="key white"></div>
+
+
+
+
+  </div>
+
+  <div id="question-display" class="question-display"></div>
+
+  <audio id="questions" src="questions/domajeur.wav"></audio>
+
+
+  
+</html>

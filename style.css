@@ -1,0 +1,83 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #143F6B;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.piano {
+  display: flex;
+}
+
+.key {
+  height: calc(var(--width) * 4);
+  width: var(--width);
+}
+
+.white {
+  --width: 53.2px;
+  background-color: white;
+  border: 1px solid #333;
+}
+
+.white.active {
+  background-color: #CCC;
+}
+
+.black {
+  --width: 32px;
+  background-color: black;
+  margin-left: calc(var(--width) / -2);
+  margin-right: calc(var(--width) / -2);
+  z-index: 2;
+}
+
+.black.active {
+  background-color: #333;
+}
+
+/* ... (autres styles) ... */
+
+/* Changement de couleur au clic */
+.key.active {
+  background-color: lightgray; /* Changer la couleur au clic */
+}
+
+/* Change la couleur lorsque la touche est enfoncée avec le clavier MIDI */
+.key.pressed {
+  background-color: lightgray;
+}
+
+.menu {
+  text-align: center;
+  margin-top: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+#quizSelect {
+  font-size: 14px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+#startQuizButton {
+  font-size: 14px;
+  padding: 5px 10px;
+  border: none;
+  background-color: #3498db;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
